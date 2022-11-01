@@ -36,7 +36,7 @@ function myalert_produtos() {
     var nome_produto = document.getElementById("nome_produto");
     var id_produto = document.getElementById("id_produto");
     var data_cadastro = document.getElementById("data_cadastro");
-    var tipo_produto = document.getElementsById("tipo_produto");
+    var quantidade = document.getElementsById("quantidade");
     var produto = document.getElementByName("produto");
 
     if(nome_produto.value==""){
@@ -47,16 +47,32 @@ function myalert_produtos() {
         for (var i = 0, length = produto.length; i < length; i++) {
             if (produto[i].checked) {
                 if(nome_produto.value != "" && id_produto.value != "" && data_cadastro.value != "" 
-                && tipo_produto.value != "" && produto.value != "") {
+                && quantidade.value != "" && produto.value != "") {
                     alert('Os dados do produto foram registrados com sucesso! \n'
                     + nome_produto.value + '\n'
                     + id_produto.value + '\n'
                     + data_cadastro.value + '\n'
-                    + tipo_produto.value + '\n'
+                    + quantidade.value + '\n'
                     + produto[i].value);
                 }
                 break;
             }
         }
     }
+}
+
+function clienteCRUD() {
+    window.open("http://127.0.0.1:5000/ClienteCRUD", "_self");
+}
+
+function adicionar_cliente() {
+    window.open("http://127.0.0.1:5000/CadastrarCliente", "_self");
+}
+
+function editar_cliente() {
+    window.open("http://127.0.0.1:5000/EditarCliente", "_self");
+}
+
+function produtosCRUD() {
+    window.open("http://127.0.0.1:5000/ProdutosCRUD", "_self");
 }

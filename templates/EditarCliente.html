@@ -14,8 +14,13 @@
     <div class="box">
         <form action="" method="POST">
             <fieldset>
-                <legend><b>Formulário de Clientes</b></legend>
+                <legend><b>Editar Cliente</b></legend>
                 <br>
+                <div class="inputBox">
+                    <input type="text" name="id_cliente" id="id_cliente" class="inputUser" required>
+                    <label for="id_cliente" class="labelInput">Id do Cliente</label>
+                </div>
+                <br><br>
                 <div class="inputBox">
                     <input type="text" name="cliente" id="cliente" class="inputUser" required>
                     <label for="cliente" class="labelInput">Nome completo</label>
@@ -56,7 +61,7 @@
                     <label for="endereco" class="labelInput">Endereço</label>
                 </div><br>
                 <br><br>
-                <button type="submit" name="submit" id="submit" onclick="myalert_clientes()">Enviar</button>
+                <button type="submit" name="submit" id="submit" onclick="">Enviar</button>
             </fieldset>
         </form>
     </div>

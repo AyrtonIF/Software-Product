@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to right, rgb(122, 255, 248), rgb(17, 54, 71));
+    background-image: linear-gradient(to right, rgb(224, 11, 153), rgb(17, 54, 71));
 }
 
 .box {
@@ -66,7 +66,7 @@ legend {
 }
 
 #submit {
-    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(21, 214, 134));
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
     width: 100%;
     border: none;
     padding: 15px;
