@@ -28,14 +28,14 @@ class Produtos(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     nome_produto = db.Column(db.String)
-    id_produto = db.Column(db.Integer)
+    codigo_produto = db.Column(db.Integer)
     data_cadastro = db.Column(db.Date)
     quantidade = db.Column(db.String)
     produto = db.Column(db.String)
 
-    def __init__(self, nome_produto, id_produto, data_cadastro, quantidade, produto):
+    def __init__(self, nome_produto, codigo_produto, data_cadastro, quantidade, produto):
         self.nome_produto = nome_produto
-        self.id_produto = id_produto
+        self.codigo_produto = codigo_produto
         self.data_cadastro = data_cadastro
         self.quantidade = quantidade
         self.produto = produto

@@ -34,7 +34,7 @@ function myalert_clientes() {
 
 function myalert_produtos() {
     var nome_produto = document.getElementById("nome_produto");
-    var id_produto = document.getElementById("id_produto");
+    var codigo_produto = document.getElementById("codigo_produto");
     var data_cadastro = document.getElementById("data_cadastro");
     var quantidade = document.getElementsById("quantidade");
     var produto = document.getElementByName("produto");
@@ -46,11 +46,11 @@ function myalert_produtos() {
     else{
         for (var i = 0, length = produto.length; i < length; i++) {
             if (produto[i].checked) {
-                if(nome_produto.value != "" && id_produto.value != "" && data_cadastro.value != "" 
+                if(nome_produto.value != "" && codigo_produto.value != "" && data_cadastro.value != "" 
                 && quantidade.value != "" && produto.value != "") {
                     alert('Os dados do produto foram registrados com sucesso! \n'
                     + nome_produto.value + '\n'
-                    + id_produto.value + '\n'
+                    + codigo_produto.value + '\n'
                     + data_cadastro.value + '\n'
                     + quantidade.value + '\n'
                     + produto[i].value);
@@ -73,6 +73,22 @@ function editar_cliente() {
     window.open("http://127.0.0.1:5000/EditarCliente", "_self");
 }
 
+function deletar_cliente() {
+    window.open("http://127.0.0.1:5000/DeletarCliente", "_self");
+}
+
 function produtosCRUD() {
     window.open("http://127.0.0.1:5000/ProdutosCRUD", "_self");
+}
+
+function adicionar_produto() {
+    window.open("http://127.0.0.1:5000/CadastrarProduto", "_self");
+}
+
+function editar_produto() {
+    window.open("http://127.0.0.1:5000/EditarProduto", "_self");
+}
+
+function deletar_produto() {
+    window.open("http://127.0.0.1:5000/DeletarProduto", "_self");
 }

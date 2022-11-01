@@ -12,15 +12,18 @@
 
 <body>
     <div class="box">
+        <form action="" method="POST">
             <fieldset>
-                <legend><b>Controle de Registro dos Clientes</b></legend>
+                <legend><b>Deletar Registro de Cliente</b></legend>
                 <br>
-                <button type="submit" name="submit" id="submit" onclick="adicionar_cliente()">Adicionar Cliente</button>
+                <div class="inputBox">
+                    <input type="text" name="id_cliente" id="id_cliente" class="inputUser" required>
+                    <label for="id_cliente" class="labelInput">Id do Cliente</label>
+                </div>
                 <br><br>
-                <button type="submit" name="submit" id="submit" onclick="editar_cliente()">Editar Registro de Cliente</button>
-                <br><br>
-                <button type="submit" name="submit" id="submit" onclick="deletar_cliente()">Deletar Registro de Cliente</button>
+                <button type="submit" name="submit" id="submit">Deletar Registro</button>
             </fieldset>
+        </form>
     </div>
 </body>
 
